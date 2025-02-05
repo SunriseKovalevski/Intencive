@@ -1,8 +1,9 @@
 package ru.aston.kovalevski_vv.task1.model;
 
 public abstract class Ticket {
-    User user;
-    Integer cost;
+    private User user;
+    private Integer cost;
+    private Integer discount;
 
     public User getUser() {
         return user;
@@ -19,8 +20,6 @@ public abstract class Ticket {
     public void setCost(Integer cost) {
         this.cost = cost;
     }
-
-    Integer discount;
 
     public Integer getDiscount() {
         return discount;
