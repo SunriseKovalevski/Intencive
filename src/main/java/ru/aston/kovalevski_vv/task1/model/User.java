@@ -1,9 +1,15 @@
 package ru.aston.kovalevski_vv.task1.model;
 
 public class User {
-    Integer age;
-    String name;
-    String sourName;
+    private Integer age;
+    private String name;
+    private String sourName;
+
+    public User(Integer age, String name, String sourName) {
+        this.age = age;
+        this.name = name;
+        this.sourName = sourName;
+    }
 
     public Integer getAge() {
         return age;
