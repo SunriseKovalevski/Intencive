@@ -1,6 +1,7 @@
 package ru.aston.kovalevski_vv.task1.model;
 
 public class User {
+
     private Integer age;
     private String name;
     private String sourName;
