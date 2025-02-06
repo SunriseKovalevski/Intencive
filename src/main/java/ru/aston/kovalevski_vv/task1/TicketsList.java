@@ -3,7 +3,7 @@ package ru.aston.kovalevski_vv.task1;
 import ru.aston.kovalevski_vv.task1.model.Ticket;
 
 import java.util.ArrayList;
-import java.util.List;
+import java.util.Collections;
 
 public class TicketsList {
 
@@ -27,5 +27,9 @@ public class TicketsList {
             totalCost += ticket.getCost();
         }
         return totalCost;
+    }
+
+    public void printSortedBySurname() {
+        Collections.sort(ticketList);
     }
 }

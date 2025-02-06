@@ -14,4 +14,9 @@ public class Commuter extends Ticket{
             setCost((int) (getCost() * 0.9));
         }
     }
+
+    @Override
+    public int compareTo(Ticket o) {
+        return this.getUser().getSurname().compareTo(o.getUser().getSurname());
+    }
 }

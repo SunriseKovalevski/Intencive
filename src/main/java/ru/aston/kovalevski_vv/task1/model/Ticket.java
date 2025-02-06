@@ -1,6 +1,6 @@
 package ru.aston.kovalevski_vv.task1.model;
 
-public abstract class Ticket {
+public abstract class Ticket implements Comparable<Ticket>{
 
     private Integer id;
     private User user;

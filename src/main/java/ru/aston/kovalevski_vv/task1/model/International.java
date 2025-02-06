@@ -12,4 +12,9 @@ public class International extends  Ticket{
             setCost((int) (getCost() * 0.95));
         }
     }
+
+    @Override
+    public int compareTo(Ticket o) {
+        return this.getUser().getSurname().compareTo(o.getUser().getSurname());
+    }
 }

@@ -4,12 +4,12 @@ public class User {
 
     private Integer age;
     private String name;
-    private String sourName;
+    private String surname;
 
     public User(Integer age, String name, String sourName) {
         this.age = age;
         this.name = name;
-        this.sourName = sourName;
+        this.surname = sourName;
     }
 
     public Integer getAge() {
@@ -28,11 +28,11 @@ public class User {
         this.name = name;
     }
 
-    public String getSourName() {
-        return sourName;
+    public String getSurname() {
+        return surname;
     }
 
-    public void setSourName(String sourName) {
-        this.sourName = sourName;
+    public void setSurname(String surname) {
+        this.surname = surname;
     }
 }
