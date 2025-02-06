@@ -2,7 +2,7 @@ package ru.aston.kovalevski_vv.task1.model;
 
 public class Commuter extends Ticket{
 
-    public Commuter(Integer id, User user, Integer cost, Integer discount) {
+    public Commuter(Integer id, User user, Integer cost) {
         super(id, user, cost);
         setDiscount();
 
