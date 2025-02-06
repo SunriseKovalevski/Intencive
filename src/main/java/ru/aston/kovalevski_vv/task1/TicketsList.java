@@ -31,5 +31,6 @@ public class TicketsList {
 
     public void printSortedBySurname() {
         Collections.sort(ticketList);
+        ticketList.forEach(System.out::println);
     }
 }
