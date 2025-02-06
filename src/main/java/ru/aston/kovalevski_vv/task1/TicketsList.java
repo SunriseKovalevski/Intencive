@@ -20,4 +20,12 @@ public class TicketsList {
     public void printTicketList() {
         ticketList.forEach(System.out::println);
     }
+
+    public Integer getTotalCost() {
+        Integer totalCost = 0;
+        for (Ticket ticket : ticketList) {
+            totalCost += ticket.getCost();
+        }
+        return totalCost;
+    }
 }
