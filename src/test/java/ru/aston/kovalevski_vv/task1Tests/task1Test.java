@@ -1,7 +1,6 @@
 package ru.aston.kovalevski_vv.task1Tests;
 
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import ru.aston.kovalevski_vv.task1.TicketsList;
 import ru.aston.kovalevski_vv.task1.model.Commuter;
