@@ -17,4 +17,12 @@ public class International extends  Ticket{
     public int compareTo(Ticket o) {
         return this.getUser().getSurname().compareTo(o.getUser().getSurname());
     }
+
+    @Override
+    public String toString() {
+        return "Ticket:   " + this.getId() +
+                " Name:    " + this.getUser().getName() +
+                " Surname: " + this.getUser().getSurname() +
+                " Cost:    " + this.getCost();
+    }
 }
