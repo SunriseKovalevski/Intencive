@@ -24,14 +24,18 @@ public class TicketsList {
 
     public Integer getTotalCost() {
         Integer totalCost = 0;
-        for (Ticket ticket : ticketList) {
-            totalCost += ticket.getCost();
+        if (ticketList != null) {
+            for (Ticket ticket : ticketList) {
+                totalCost += ticket.getCost();
+            }
         }
-        return totalCost;
+            return totalCost;
     }
 
     public void printSortedBySurname() {
-        Collections.sort(ticketList);
-        ticketList.forEach(System.out::println);
+        if (ticketList != null) {
+            Collections.sort(ticketList);
+            ticketList.forEach(System.out::println);
+        }
     }
 }
