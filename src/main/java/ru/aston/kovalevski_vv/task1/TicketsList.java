@@ -18,7 +18,8 @@ public class TicketsList {
     }
 
     public void printTicketList() {
-        ticketList.forEach(System.out::println);
+        if (ticketList != null && !ticketList.isEmpty())
+            ticketList.forEach(System.out::println);
     }
 
     public Integer getTotalCost() {
