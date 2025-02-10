@@ -47,7 +47,7 @@ public class User {
             return false;
         }
         User user = (User) obj;
-        return name.equals(user.name) && surname.equals(user.surname) && Objects.equals(age, user.age);
+        return Objects.equals(name, user.name) && Objects.equals(surname, user.surname) && Objects.equals(age, user.age);
     }
 
     @Override
