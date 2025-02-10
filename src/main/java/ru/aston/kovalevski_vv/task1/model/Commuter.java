@@ -1,4 +1,30 @@
 package ru.aston.kovalevski_vv.task1.model;
 
-public class Commuter {
+public class Commuter extends Ticket{
+
+    public Commuter(Integer id, User user, Integer cost) {
+        super(id, user, cost);
+        setDiscount();
+
+    }
+
+    @Override
+    public void setDiscount() {
+        if (getCost() >= 1000) {
+            setCost((int) (getCost() * 0.9));
+        }
+    }
+
+    @Override
+    public int compareTo(Ticket o) {
+        return this.getUser().getSurname().compareTo(o.getUser().getSurname());
+    }
+
+    @Override
+    public String toString() {
+        return "Ticket:   " + this.getId() +
+                " Name:    " + this.getUser().getName() +
+                " Surname: " + this.getUser().getSurname() +
+                " Cost:    " + this.getCost();
+    }
 }
