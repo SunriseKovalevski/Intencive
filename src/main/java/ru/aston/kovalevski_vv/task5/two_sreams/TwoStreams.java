@@ -1,7 +1,9 @@
 package ru.aston.kovalevski_vv.task5.two_sreams;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Stream;
 
 public class TwoStreams {
     public static void main(String[] args) {
@@ -16,6 +18,10 @@ public class TwoStreams {
             secondList.add(j);
         }
 
+        Stream<Integer> firstStream = firstList.stream();
+        Stream<Integer> secondStream = secondList.stream();
+
+        Stream.concat(firstStream, secondStream).filter(x -> x > 10).forEach(System.out::println);
 
     }
 }
